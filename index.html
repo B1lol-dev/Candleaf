@@ -20,7 +20,6 @@
         }
 
         /* preloader */
-        /* Demo Junk! !Dont Use! */
         
         .loader_wrapper {
           position: fixed;
@@ -30,6 +29,8 @@
           background: #009688;
           height: 100vh;
           width: 100%;
+          top: 0;
+          left: 0;
           z-index: 9999999;
         }
         
@@ -42,6 +43,7 @@
           position: relative;
           animation: spin 0.675s linear 0s infinite normal;
           background: #26A69A;
+          transform: rotate(0deg) scale(2);
         }
         
         .spin-loader:before,
@@ -75,7 +77,7 @@
         
         @keyframes spin {
           to {
-            transform: rotate(360deg);
+            transform: rotate(360deg) scale(2);
           }
         }
 
