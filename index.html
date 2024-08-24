@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candleaf</title>
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <style>
+        @font-face {
+            font-family: Poppins;
+            src: url(./fonts/Poppins-Regular.woff);
+        }
+
+        *{
+            font-family: Poppins;
+        }
+    </style>
+
+    <!-- Webpage icon -->
+    <link rel="icon" href="./assets/logo_single.svg">
+</head>
+<body>
+    <!-- header start -->
+    <header class="py-[24px] fixed w-full bg-[#ffffffe6] backdrop-blur-sm z-[99]">
+        <div class="container mx-auto max-w-[1175px] px-8">
+            <nav class="flex items-center justify-between">
+                <div>
+                    <a href="#">
+                        <img src="./assets/logo.svg" alt="Candleaf">
+                    </a>
+                </div>
+
+                <ul class="flex gap-16 text-[#272727] font-medium max-md:fixed max-md:top-0 max-md:left-0 max-md:flex-col max-md:text-center max-md:text-white max-md:text-[20px] max-md:p-20 max-md:h-full max-md:bg-[#a9cab8] max-md:z-[100] max-md:duration-300 max-md:translate-x-[-100%]" id="nav_collection">
+                    <li>
+                        <select name="Discovery" id="nav_select" class="outline-none cursor-pointer bg-transparent">
+                            <option value="Discovery">Discovery</option>
+                            <option value="Discovery">Shop</option>
+                            <option value="Discovery">Support</option>
+                        </select>
+                    </li>
+                    
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+
+                    <div class="gap-[24px] hidden max-sm:flex invert justify-center">
+                        <img src="./assets/Profile_icon.svg" alt="Profile" class="cursor-pointer">
+                        <img src="./assets/Cart_icon.svg" alt="Cart" class="cursor-pointer">
+                    </div>
+
+                    <li class="text-2xl font-medium hidden max-md:block" id="nav_close">
+                        ✕
+                    </li>
+                </ul>
+
+                <span class="text-2xl font-medium hidden max-md:block" id="nav_menu">☰</span>
+
+                <div class="flex gap-[24px] max-sm:hidden">
+                    <img src="./assets/Profile_icon.svg" alt="Profile" class="cursor-pointer">
+                    <img src="./assets/Cart_icon.svg" alt="Cart" class="cursor-pointer">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="pt-[82px]">
+        <!-- hero start -->
+        <section class="bg-[url('./assets/hero_bg.png')] bg-cover bg-no-repeat bg-center pt-[175px] pb-[181px]">
+            <div class="container mx-auto max-w-[1175px] px-8 flex justify-center items-center">
+                
+                <div class="pt-[33px] pb-[63px] px-24 bg-[#F7F8FACC] backdrop-blur-md flex flex-col items-center justify-center rounded-sm max-w-[730px] max-sm:px-8">
+                    <h1 class="text-center text-[40px] font-medium max-sm:text-[30px]">🌱<br>The nature candle</h1>
+                    <p class="text-[18px] text-center max-w-[537px] max-sm:text-base">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments</p>
+                    <button class="bg-[#56B280] rounded-[4px] px-[44px] py-2 text-white text-[20.65px] mt-[53px] duration-200 hover:text-[#56B280] hover:bg-transparent outline outline-2 outline-[#56B280] max-sm:px-[10px] max-sm:text-base max-sm:mt-[30px]">Discovery our collection</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- products start -->
+        <section class="pt-[90px] pb-[120px]">
+            <div class="container mx-auto max-w-[1175px] px-8">
+                <h1 class="text-[40px] text-center font-medium text-[#0B254B]">Products</h1>
+                <p class="mt-[15px] text-[#5E6E89] text-center text-[18px] font-medium">Order it for you or for your beloved ones</p>
+
+                <div class="grid grid-cols-4 gap-[30px] mt-[60px] max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:items-center">
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product1.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Spiced Mint</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product2.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Sweet Straweberry</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product3.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Cool Blueberries</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product4.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Juicy Lemon</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product5.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Juicy Lemon</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product6.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Fragrant Cinnamon</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product7.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Summer Cherries</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-md:max-w-[unset] max-sm:max-w-[255px] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[210px]">
+                            <img src="./assets/product8.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Clean Lavander</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- products end -->
+
+        <!-- about start -->
+        <section class="bg-[#F7F8FA] pt-[133px] pb-[209px]">
+            <div class="container mx-auto max-w-[1175px] px-8">
+                <div class="flex justify-between max-[1100px]:flex-col-reverse max-[1100px]:items-center">
+
+                    <div>
+                        <h2 class="font-medium text-[#1D252C] text-[40px] max-w-[320px]">Clean and fragrant soy wax</h2>
+                        <p class="text-[#56B280] mt-[15px]">Made for your home and for your wellness</p>
+                        
+                        <ul class="mt-[38px] flex flex-col gap-[10px]">
+                            <li class="flex items-center max-sm:block"><span class="before:content-['✓'] before:rounded-[50%] before:flex before:items-center before:justify-center before:border before:border-black before:text-[10px] before:p-1 before:text-black before:mr-[10px] before:w-[14px] before:h-[14px] flex items-center font-semibold">Eco-sustainabl</span>: All recyclable materials, 0% CO2 emissions</li>
+                            <li class="flex items-center max-sm:block"><span class="before:content-['✓'] before:rounded-[50%] before:flex before:items-center before:justify-center before:border before:border-black before:text-[10px] before:p-1 before:text-black before:mr-[10px] before:w-[14px] before:h-[14px] flex items-center font-semibold">Hyphoallergenic</span>: 100% natural, human friendly ingredients</li>
+                            <li class="flex items-center max-sm:block"><span class="before:content-['✓'] before:rounded-[50%] before:flex before:items-center before:justify-center before:border before:border-black before:text-[10px] before:p-1 before:text-black before:mr-[10px] before:w-[14px] before:h-[14px] flex items-center font-semibold">Handmade</span>: All candles are craftly made with love.</li>
+                            <li class="flex items-center max-sm:block"><span class="before:content-['✓'] before:rounded-[50%] before:flex before:items-center before:justify-center before:border before:border-black before:text-[10px] before:p-1 before:text-black before:mr-[10px] before:w-[14px] before:h-[14px] flex items-center font-semibold">Long burning</span>: No more waste. Created for last long.</li>
+                        </ul>
+
+                        <button class="px-[44px] py-2 text-white bg-[#56B280] mt-[68px] rounded-[4px] after:content-['>'] after:text-white after:absolute after:translate-x-[-100%] after:opacity-0 after:duration-200 hover:after:translate-x-1 hover:after:opacity-100">Learn more</button>
+                    </div>
+
+                    <div>
+                        <img src="./assets/about.png" alt="candles" class="object-cover select-none pointer-events-none">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- about end -->
+
+        <!-- testimonials start -->
+        <section class="bg-[#56B2801A] py-[90px]">
+            <div class="container mx-auto max-w-[1175px] px-8">
+                <h1 class="text-[40px] text-center font-medium text-[#0B254B]">Testimonials</h1>
+                <p class="mt-[15px] text-[#5E6E89] text-center text-[18px] font-medium">Some quotes from our happy customers</p>
+
+                <div class="mt-[27px] flex gap-[31px] max-lg:flex-col max-lg:items-center">
+
+                    <div class="bg-white shadow-[0px_4px_24px_0px_#8BA7B229] pt-[33px] pb-[29px] px-[16px] rounded-md flex flex-col items-center max-w-[350px] w-full duration-300 hover:scale-105">
+                        <img src="./assets/luisa.png" alt="Luisa" class="object-cover">
+
+                        <div class="text-[24px] text-[#56B280] after:content-[''] after:h-full after:w-[40px] after:bg-gradient-to-l after:from-white after:to-transparent after:absolute after:right-0 relative">★★★★★</div>
+
+                        <h4 class="font-medium text-[22px] text-[#1D293F] text-center max-w-[304px]">“I love it! No more air fresheners”</h4>
+                        <p class="text-[#7C8087] text-[18px] text-center mt-[6px]">Luisa</p>
+                        
+                    </div>
+
+                    <div class="bg-white shadow-[0px_4px_24px_0px_#8BA7B229] pt-[33px] pb-[29px] px-[16px] rounded-md flex flex-col items-center max-w-[350px] w-full duration-300 hover:scale-105">
+                        <img src="./assets/edoardo.png" alt="Edoardo" class="object-cover">
+
+                        <div class="text-[24px] text-[#56B280]">★★★★★</div>
+
+                        <h4 class="font-medium text-[22px] text-[#1D293F] text-center max-w-[260px]">“Raccomended for everyone”</h4>
+                        <p class="text-[#7C8087] text-[18px] text-center mt-[6px]">Edoardo</p>
+                        
+                    </div>
+
+                    <div class="bg-white shadow-[0px_4px_24px_0px_#8BA7B229] pt-[33px] pb-[29px] px-[16px] rounded-md flex flex-col items-center max-w-[350px] w-full duration-300 hover:scale-105">
+                        <img src="./assets/mart.png" alt="Mart" class="object-cover">
+
+                        <div class="text-[24px] text-[#56B280] after:content-[''] after:h-full after:w-[40px] after:bg-gradient-to-l after:from-white after:to-transparent after:absolute after:right-0 relative">★★★★★</div>
+
+                        <h4 class="font-medium text-[22px] text-[#1D293F] text-center max-w-[260px]">“Looks very natural, the smell is awesome”</h4>
+                        <p class="text-[#7C8087] text-[18px] text-center mt-[6px]">Mart</p>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- testimonials end -->
+
+        <!-- popular start -->
+        <section class="pt-[90px] pb-[70px]">
+            <div class="container mx-auto max-w-[1175px] px-8">
+                <h1 class="text-[40px] text-center font-medium text-[#0B254B]">Popular</h1>
+                <p class="mt-[15px] text-[#5E6E89] text-center text-[18px] font-medium">Our top selling product that you may like</p>
+
+                <div class="grid grid-cols-4 mt-[50px] gap-[30px] max-lg:grid-cols-2 max-md:flex max-md:flex-col max-md:items-center">
+                    
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-lg:max-w-[unset] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[154px] max-lg:h-auto">
+                            <img src="./assets/product1.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Spiced Mint</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-lg:max-w-[unset] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[154px] max-lg:h-auto">
+                            <img src="./assets/product2.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Sweet Straweberry</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-lg:max-w-[unset] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[154px] max-lg:h-auto">
+                            <img src="./assets/product3.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Cool Blueberries</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="shadow-[0px_4px_24px_0px_#7B7B7B26] max-w-[255px] max-lg:max-w-[unset] duration-300 hover:scale-110">
+                        <div class="px-[26px] bg-[#f7f8fa] h-[154px] max-lg:h-auto">
+                            <img src="./assets/product4.png" alt="candle" class="object-cover h-full w-full">
+                        </div>
+
+                        <div class="pt-[10px] pb-[16px] px-[26px] font-medium">
+                            <h3 class="text-start text-base text-[base]">Juicy Lemon</h3>
+                            <p class="text-end text-[20px] text-[#56B280]">
+                                <a href="#">9.99$</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- popular end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="bg-[#272727] pt-[60px]">
+        <div class="container mx-auto max-w-[1175px] px-8">
+            <div class="pt-[16px] pb-[115px] flex w-full justify-between border-t border-white max-[900px]:flex-col max-[900px]:gap-[50px] max-[900px]:items-center max-sm:items-start">
+                <div class="text-white max-w-[270px] max-[900px]:text-center">
+                    <img src="./assets/logo_white.svg" alt="Candleaf">
+                    <p class="max-[900px]:mt-[10px]">Your natural candle made for your home and for your wellness.</p>
+                </div>
+
+                <div class="flex max-sm:flex-col max-sm:gap-10">
+                    
+                    <div class="font-medium w-[170px]">
+                        <h4 class="text-[#56B280]">Discovery</h4>
+
+                        <ul class="flex flex-col gap-[20px] text-white mt-[25px]">
+                            <li>
+                                <a href="#">New season</a>
+                            </li>
+                            <li>
+                                <a href="#">Most searched</a>
+                            </li>
+                            <li>
+                                <a href="#">Most selled</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="font-medium w-[170px] max-[900px]:text-center max-sm:text-left">
+                        <h4 class="text-[#56B280]">About</h4>
+
+                        <ul class="flex flex-col gap-[20px] text-white mt-[25px]">
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="font-medium w-[170px] max-[900px]:text-right max-sm:text-left">
+                        <h4 class="text-[#56B280]">Info</h4>
+
+                        <ul class="flex flex-col gap-[20px] text-white mt-[25px]">
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policies</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>                
+
+        <div class="bg-white ">
+            <div class="container mx-auto max-w-[1175px] px-8 flex pt-[25px] pb-[27px] text-[#5E6E89] justify-between max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:gap-3">
+                <h4>©Candleaf All Rights Reserved.</h4>
+                <p>Made by 
+                    <a href="https://github.com/B1lol-dev" class="underline">B1lol-dev</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./main.js"></script>
+</body>
+</html>
